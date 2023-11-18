@@ -4,7 +4,7 @@
 #include <shared_mutex>
 
 // LOCK_SEG_SIZE has to be greater than 1
-constexpr int LOCK_SEG_SIZE = 2;
+constexpr int LOCK_SEG_SIZE = 50;
 class DataList{
 public:
     DataList(int size): dl_size(size){

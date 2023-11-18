@@ -19,7 +19,7 @@ void worker(){
 int main(int argc, char* argv[]){
     if (argc < 2) {
         std::cerr << "Arguments needed: num_workers" << std::endl;
-        exit(1);;
+        exit(1);
     }
     std::chrono::time_point start = std::chrono::high_resolution_clock::now();
     int num_workers = atoi(argv[1]);
