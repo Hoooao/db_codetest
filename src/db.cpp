@@ -7,9 +7,9 @@ DataList dl(DATA_SIZE);
 
 void worker(){
     for (int k = 0; k < REPETITION; k++) {
-        if (k%500 == 0){
-           // std::clog<<"Worker "<<std::this_thread::get_id()<<" finished "<<k<<" iterations"<<std::endl;
-        }
+//        if (k%500 == 0){
+//           std::clog<<"Worker "<<std::this_thread::get_id()<<" finished "<<k<<" iterations"<<std::endl;
+//        }
         int j = rand() % (DATA_SIZE+1);
         int i = rand() % (DATA_SIZE+1);
         dl.set_j_with_i(i, j);

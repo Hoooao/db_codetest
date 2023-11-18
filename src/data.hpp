@@ -2,6 +2,7 @@
 #include <vector>
 #include <mutex>
 #include <shared_mutex>
+#include <cassert>
 
 // LOCK_SEG_SIZE has to be greater than 1
 constexpr int LOCK_SEG_SIZE = 50;
